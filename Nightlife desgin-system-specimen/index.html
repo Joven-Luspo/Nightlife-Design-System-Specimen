@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nightlife — Design System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+  <div class="container header-inner">
+
+    <a class="brand" href="#top">Nightlife</a>
+
+    <nav aria-label="Main navigation">
+      <a href="#foundations">Foundations</a>
+      <a href="#tokens">Tokens</a>
+      <a href="#typography">Typography</a>
+      <a href="#actions">Actions</a>
+      <a href="#surfaces">Surfaces</a>
+      <a href="#controls">Controls</a>
+    </nav>
+
+    <button
+      class="secondary-button"
+      id="themeToggle"
+      type="button">
+      Use alternative theme
+    </button>
+
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="intro container" id="top">
+
+    <h1>Discovering what activities there are at nighttime.</h1>
+
+    <p class="lede">
+      Nightlife is a fictional cultural-information project
+      about local events, public resources, and places to eat at night.
+    </p>
+
+  </section>
+
+  <section class="section container" id="foundations">
+
+    <div class="section-heading">
+      <span>S1</span>
+      <h2>Foundations</h2>
+    </div>
+
+    <div class="two-col">
+
+      <div class="surface">
+
+        <h3>Selective reset</h3>
+
+        <p>
+          The reset removes unnecessary browser spacing,
+          keeps sizing responsive, makes images responsive,
+          and lets form controls use the same font.
+        </p>
+
+        <pre><code>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+        </code></pre>
+
+      </div>
+
+      <div class="notice">
+
+        <strong>Usage note</strong>
+
+        <p>
+          The reset is intentionally small and keeps
+          useful browser defaults.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="section container" id="tokens">
+
+    <div class="section-heading">
+      <span>S2</span>
+      <h2>Tokens</h2>
+    </div>
+
+    <div class="token-grid">
+
+      <div class="token-group">
+
+        <h3>Color</h3>
+
+        <div class="token">
+          <code>--background</code>
+          <span>#FFFFFF</span>
+        </div>
+
+        <div class="token">
+          <code>--surface</code>
+          <span>#FFFFFF</span>
+        </div>
+
+        <div class="token">
+          <code>--text</code>
+          <span>#171717</span>
+        </div>
+
+        <div class="token">
+          <code>--red</code>
+          <span>#C62828</span>
+        </div>
+
+        <div class="token">
+          <code>--border</code>
+          <span>#D9B5B5</span>
+        </div>
+
+      </div>
+
+      <div class="token-group">
+
+        <h3>Spacing</h3>
+
+        <div class="token">
+          <code>--small</code>
+          <span>0.5rem</span>
+        </div>
+
+        <div class="token">
+          <code>--medium</code>
+          <span>1rem</span>
+        </div>
+
+        <div class="token">
+          <code>--large</code>
+          <span>1.5rem</span>
+        </div>
+
+        <div class="token">
+          <code>--section</code>
+          <span>2.5rem</span>
+        </div>
+
+      </div>
+
+      <div class="token-group">
+
+        <h3>Sizing</h3>
+
+        <div class="token">
+          <code>--max-width</code>
+          <span>72rem</span>
+        </div>
+
+        <div class="token">
+          <code>--radius</code>
+          <span>0.35rem</span>
+        </div>
+
+      </div>
+
+
+      <div class="token-group">
+
+        <h3>Typography</h3>
+
+        <div class="token">
+          <code>--body-font</code>
+          <span>Arial</span>
+        </div>
+
+        <div class="token">
+          <code>--heading-font</code>
+          <span>Georgia</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="section container" id="typography">
+
+    <div class="section-heading">
+      <span>S3</span>
+      <h2>Typography</h2>
+    </div>
+
+    <div class="surface">
+
+      <h1>Find what's happening after dark.</h1>
+
+      <h2>Heading two</h2>
+
+      <h3>Heading three</h3>
+
+      <p>
+        Body copy uses Arial.
+      </p>
+
+      <p>
+        <strong>Strong text</strong>,
+        <em>emphasis</em>,
+        and
+        <a href="#actions">links</a>
+        use semantic HTML.
+      </p>
+
+      <ul>
+        <li>Unordered list</li>
+        <li>Another item</li>
+      </ul>
+
+      <ol>
+        <li>Ordered list</li>
+        <li>Another item</li>
+      </ol>
+
+      <p>
+        Inline code:
+        <code>--red</code>
+      </p>
+
+    </div>
+
+  </section>
+
+  <section class="section container" id="actions">
+
+    <div class="section-heading">
+      <span>S4</span>
+      <h2>Actions</h2>
+    </div>
+
+    <div class="surface">
+
+      <p>
+        <a href="#surfaces">Explore events</a>
+      </p>
+
+      <p>
+        <button class="primary-button" type="button">
+          Primary
+        </button>
+
+        <button class="secondary-button" type="button">
+          Secondary
+        </button>
+      </p>
+
+      <div class="state-strip">
+
+        <button class="primary-button" type="button">
+          Default
+        </button>
+
+        <button class="primary-button" type="button">
+          Hover
+        </button>
+
+        <button class="primary-button" type="button">
+          Active
+        </button>
+
+        <button class="primary-button" type="button" disabled>
+          Disabled
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="section container" id="surfaces">
+
+    <div class="section-heading">
+      <span>S5</span>
+      <h2>Surfaces</h2>
+    </div>
+
+    <div class="surface-grid">
+
+      <article class="card">
+
+        <h3>Friday Night Sessions</h3>
+
+        <p>
+          Live music, food, and activities downtown.
+        </p>
+
+        <a href="#controls">View event</a>
+
+      </article>
+
+      <article class="card">
+
+        <h3>Tonight's Venue Guide</h3>
+
+        <p>
+          Information about nightlife locations.
+        </p>
+
+        <button class="primary-button" type="button">
+          View venue
+        </button>
+
+      </article>
+
+      <div class="notice">
+
+        <strong>Tonight</strong>
+
+        <p>
+          Important event and venue information.
+        </p>
+
+      </div>
+
+      <figure>
+
+        <div class="media-box">
+          <img src="nightlife.jpg" alt="Nightlife event">
+        </div>
+
+      </figure>
+
+    </div>
+
+  </section>
+
+  <section class="section container" id="controls">
+
+    <div class="section-heading">
+      <span>S6</span>
+      <h2>Controls</h2>
+    </div>
+
+    <form class="control-panel">
+
+      <div class="control-grid">
+
+        <label for="search">
+          Search events
+
+          <input
+            id="search"
+            name="search"
+            type="text"
+            placeholder="Search events..."
+          >
+
+        </label>
+
+        <label for="category">
+          Category
+
+          <select id="category" name="category">
+
+            <option>All categories</option>
+            <option>Live music</option>
+            <option>DJ nights</option>
+            <option>Comedy</option>
+          
+          </select>
+        </label>
+      </div>
+
+      <fieldset>
+
+        <legend>When are you going?</legend>
+
+        <label class="choice">
+          <input
+            type="radio"
+            name="time"
+            value="tonight"
+            checked>
+          Tonight
+        </label>
+
+        <label class="choice">
+          <input
+            type="radio"
+            name="time"
+            value="weekend">
+          This weekend
+        </label>
+
+      </fieldset>
+
+
+      <label class="choice">
+        <input
+          type="checkbox"
+          name="free">
+        Show free events only
+      </label>
+
+      <button class="primary-button" type="submit">
+        Find events
+      </button>
+    </form>
+  </section>
+</main>
+
+
+<footer class="site-footer">
+  <div class="container">
+    <strong>Nightlife</strong>
+    <span>
+      Nightlife event guide - design-system specimen
+    </span>
+  </div>
+</footer>
+
+<script>
+
+const root = document.documentElement;
+const toggle = document.getElementById("themeToggle");
+toggle.addEventListener("click", function () {
+  const alternative =
+    root.dataset.theme === "alternative";
+  root.dataset.theme =
+    alternative ? "default" : "alternative";
+  toggle.textContent =
+    alternative
+      ? "Use alternative theme"
+      : "Use default theme";
+});
+
+</script>
+</body>
+</html>
